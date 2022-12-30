@@ -28,3 +28,16 @@
         const tabJSON = await fetch('main.json');
         return await tabJSON.json();
     }
+
+}">
+<li>Tableau JSON</li>
+<template x-for="obj in tableauJSON">
+    <li>
+        <span x-text="obj.prenom">prenom</span>
+        <span x-text="obj.nom">nom</span>
+        <span x-text="obj.age">age</span>
+    </li>
+</template>
+</ul>
+</body>
+</html>
