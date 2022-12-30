@@ -23,3 +23,8 @@
 </li>
 </template>
 </ul>
+<ul x-data="{
+    async tableauJSON() {
+        const tabJSON = await fetch('main.json');
+        return await tabJSON.json();
+    }
